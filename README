@@ -13,6 +13,8 @@ Docker Desktop comes with a Kubernetes client and server that has to be enabled.
 ### Shopping Cart
 ### Special Offers
 
+https://github.com/datalust/serilog-sinks-seq
+
 ## References
 - [Microservices in .NET, Second Edition](https://www.manning.com/books/microservices-in-net-second-edition)
 - [horsdal/microservices-in-dotnet-book-second-edition: Code for the second edition of Microservices in .NET Core](https://github.com/horsdal/microservices-in-dotnet-book-second-edition)

@@ -1,5 +1,21 @@
 # MicroserviceNET Logging
 
+## Dependencies
 - Uses Serilog
 - Uses `Microsoft.Extensions.Hosting"`
-- Crea Nuget package with `dotnet pack --configuration Release`
+
+## Build local Nuget package
+- Create  Nuget package with `dotnet pack --configuration Release`
+- Add to Nuget `nuget add ../MicroserviceNET.Logging/MicroserviceNET.Logging/bin/Release/MicroserviceNET.Logging.1.0.0.nupkg -Source /tmp/nuget`
+
+## Install local package in app
+- Install in project `dotnet add package MicroserviceNET.Logging -s /tmp/nuget`
+
+## Troubleshooting
+- Clear all local caches `dotnet nuget locals all --clear`
+
+
+## References
+- https://docs.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package-using-visual-studio?tabs=netcore-cli
+- https://github.com/serilog/serilog-sinks-console
+- https://github.community/t/upload-historic-nuget-packages-without-repositoryurl/166244
