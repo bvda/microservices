@@ -1,0 +1,5 @@
+# MicroserviceNET Logging
+
+- Uses Serilog
+- Uses `Microsoft.Extensions.Hosting"`
+- Crea Nuget package with `dotnet pack --configuration Release`
