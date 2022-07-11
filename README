@@ -1,0 +1,18 @@
+# Microservices
+## Introduction
+This repository holds an implementation of the system described in the book by Christian Horsdal Gammelgaard. It has been updated, so it uses the new .NET 6.0 templates and each service mentioned in the book is implemented and integrated to create the complete the whole system.
+
+## Installation
+Docker is used to create containers for each microservice. Get it at [Get Docker | Docker Documentation](https://docs.docker.com/get-docker/) and follow the instructions.
+
+Docker Desktop comes with a Kubernetes client and server that has to be enabled. See [Deploy on Kubernetes | Docker Documentation](https://docs.docker.com/desktop/kubernetes/)
+
+## Microservices
+### ApiGateway
+### Loyalty Program
+### Shopping Cart
+### Special Offers
+
+## References
+- [Microservices in .NET, Second Edition](https://www.manning.com/books/microservices-in-net-second-edition)
+- [horsdal/microservices-in-dotnet-book-second-edition: Code for the second edition of Microservices in .NET Core](https://github.com/horsdal/microservices-in-dotnet-book-second-edition)
