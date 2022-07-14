@@ -7,6 +7,8 @@ Docker is used to create containers for each microservice. Get it at [Get Docker
 
 Docker Desktop comes with a Kubernetes client and server that has to be enabled. See [Deploy on Kubernetes | Docker Documentation](https://docs.docker.com/desktop/kubernetes/)
 
+Install Health in Seq https://docs.datalust.co/docs/health-checks
+
 ## Microservices
 ### ApiGateway
 ### Loyalty Program
@@ -14,6 +16,7 @@ Docker Desktop comes with a Kubernetes client and server that has to be enabled.
 ### Special Offers
 
 https://github.com/datalust/serilog-sinks-seq
+https://helm.sh/
 
 ## References
 - [Microservices in .NET, Second Edition](https://www.manning.com/books/microservices-in-net-second-edition)
