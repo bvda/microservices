@@ -15,6 +15,7 @@ public class ShoppingCartController : ControllerBase {
   public async Task<IActionResult> OnGetAsync()
   {
     await Task.Delay(200);
+    _logger.LogInformation("OnGetAsync()");
     return Ok();
   }
 

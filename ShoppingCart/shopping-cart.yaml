@@ -20,7 +20,7 @@ spec:
             - containerPort: 80
           env:
             - name: SeqUrl  
-              value: http://my-seq:5341
+              value: http://my-seq-int
 ---
 apiVersion: v1
 kind: Service

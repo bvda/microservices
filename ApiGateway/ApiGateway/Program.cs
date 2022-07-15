@@ -1,10 +1,12 @@
+using ApiGateway.Clients;
 using MicroserviceNET.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Host.UseLogging();
+builder.Host.UseLogging(builder.Configuration["SeqUrl"]);
 
 // Add services to the container.
+builder.Services.AddHttpClient<IShoppingCartClient, ShoppingCartClient>();
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

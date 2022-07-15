@@ -13,6 +13,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: my-seq # deployment
+            name: my-seq-int # deployment
             port: 
               number: 80
