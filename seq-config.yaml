@@ -22,22 +22,22 @@ spec:
           env:
           - name: ACCEPT_EULA
             value: "Y"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: my-seq
-spec:
-  type: LoadBalancer
-  ports:
-    - name: my-seq
-      port: 5200
-      targetPort: 80
-    - name: stuff
-      port: 5222
-      targetPort: 5341
-  selector:
-    app: my-seq
+# ---
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: my-seq
+# spec:
+#   type: LoadBalancer
+#   ports:
+#     - name: my-seq
+#       port: 5200
+#       targetPort: 80
+#     - name: stuff
+#       port: 5341
+#       targetPort: 5341
+#   selector:
+#     app: my-seq
 ---
 apiVersion: v1
 kind: Service
@@ -46,7 +46,7 @@ metadata:
 spec:
   ports:
     - name: my-seq
-      port: 5341
+      port: 80
       targetPort: 5341
   selector:
     app: my-seq
