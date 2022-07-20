@@ -1,9 +1,10 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG USERNAME
 ARG PASSWORD
+ARG URL
 
 WORKDIR /src
-RUN dotnet nuget add source --username $USERNAME --password $PASSWORD --store-password-in-clear-text --name github "https://nuget.pkg.github.com/bvda/index.json"
+RUN dotnet nuget add source --username $USERNAME --password $PASSWORD --store-password-in-clear-text --name github $URL
 COPY ["ShoppingCart/ShoppingCart.csproj*", "ShoppingCart/"]
 RUN dotnet restore "ShoppingCart/ShoppingCart.csproj"
 COPY . .
